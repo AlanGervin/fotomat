@@ -33,16 +33,18 @@ html {
 .banner {
  background-image: url(../images/banner-landingpage.jpg);
  background-repeat: no-repeat;
- width:100%;
+ background-position:center;
  background-size:cover;
 }
 
 .image-container {
   overflow: hidden;
+ 
 }
 
 .image-container img {
   display: block;
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -141,19 +143,20 @@ header .mobile {
 
 
 /* Sign Up Section */
-
-.email .button {
-
-}
-
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  padding-top:170px;
-  padding-bottom:170px;
-  padding-left:100px;
+}
+
+.email .button {
+  padding-left:80px;
+  padding-right:80px;
+}
+
+#sign-up-section .banner {
+  margin:0;
 }
 
 #sign-up-cta {
@@ -236,6 +239,11 @@ header .mobile {
     margin: 26px 80px 56px 80px;
   }
 
+  #sign-up-section center {
+    padding-left:80px;
+    padding-right:80px;
+  }
+
   #sign-up-cta h1 {
     font-size: 3.125rem;
   }
@@ -265,22 +273,41 @@ header .mobile {
 
 #features-section {
   display: flex;
+  width:90%;
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  padding-bottom:46px;
 }
+
+#features-section .image-container img {
+  width:90%;
+  height:60%;
+  margin:0;
+
+
+}
+
+.center .content {
+  height:147px;
+}
+
+
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
   background-color: white;
+  margin-right:32px;
 }
 
 .feature .image-container {
-  width: 90%;
+  width: 100%;
   height: 65%;
   margin: 0 auto;
+  margin-left:32px;
+  margin-right:32px;
+  margin-bottom:40px;
+  margin-top:32px;
 }
 
 .feature h2 {
@@ -325,13 +352,16 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+
   background-color: #4a4a4a;
+  padding-top:64px;
+  padding-bottom:64px;
 }
 
 #filters-section .content {
   padding: 0 .625rem;
-  margin-bottom: 5rem;
+  padding-bottom:80px;
+  border:0;
 }
 
 #filters-section .content h2 {
@@ -348,8 +378,12 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  max-width: 100%;
+  max-width: 1000%;
+  height:100%;
   padding: 0 1%;
+  display:flex;
+  align-items:flex-start;
+  justify-content: left;
 }
 
 @media only screen and (max-width: 760px) {
@@ -357,9 +391,7 @@ header .mobile {
     padding: 1.5rem 0 0 0;
   }
 
-  #filters-section .content {
-    margin-bottom: 1rem;
-  }
+
 
   #filters-section .content h2 {
     padding-bottom: .625rem;
@@ -375,6 +407,7 @@ header .mobile {
 
   #filters-section .images-container {
     padding: 0;
+    padding-bottom:64px;
   }
 
   #filters-section .extra {
@@ -427,6 +460,7 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  height: 32px;
 }
 
 footer .content {
