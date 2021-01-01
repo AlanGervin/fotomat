@@ -297,6 +297,11 @@ header .mobile {
 .feature {
   flex: 1;
   background-color: white;
+  padding-left:32px;
+  padding-right:32px;
+}
+
+.feature:nth-child(1) {
   margin-right:32px;
 }
 
@@ -386,7 +391,7 @@ header .mobile {
   justify-content: left;
 }
 
-#filters-section .images-container img {
+#filters-section .image-container img {
   max-width: 100%;
 }
 
