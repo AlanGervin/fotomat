@@ -22,12 +22,8 @@ html {
 .button {
   border-radius: 4px;
   font-size:20px;
-  background-color: #4a4a4a;
+  background-color: #9dc20b;
   color: white;
-
-
-
-  
 }
 
 .banner {
@@ -39,14 +35,34 @@ html {
 
 .image-container {
   overflow: hidden;
- 
 }
 
 .image-container img {
   display: block;
-
 }
 
+.quote {
+  font-size: 30px;
+  font-family:"Palatino-Italic";
+  line-height:1.1;
+  font-style:italic;
+}
+
+.copyright {
+  color:white;
+  font-size:12px;
+  font-family:Roboto;
+}
+
+.location {
+  color:white;
+  font-size:12px;
+  font-family:Roboto;
+}
+
+.tablet {
+  height:85px;
+}
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
@@ -54,7 +70,6 @@ html {
 }
 
 /* Header */
-
 header {
   position: fixed;
   width: 100%;
@@ -100,13 +115,32 @@ header .icon {
   padding-left: .75rem;
 }
 
+
+@media only screen and (min-width: 846px) {
+  #joinUsBtn {
+    display:inline-block;
+  }
+
+  nav {
+    align-items:flex-end
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+  #joinUsBtn {
+    display:none;
+  }
+}
+
 header .mobile {
   display: none;
 }
 
+
 @media only screen and (max-width: 760px) {
   header .desktop {
-    display: block;
+    display: none;
   }
 
   header .mobile {
@@ -135,8 +169,6 @@ header .mobile {
     line-height: 1.6;
     color: white;
   }
-
-
 
 }
 
@@ -213,6 +245,7 @@ header .mobile {
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  background-color:#4a4a4a;
 }
 
 @media only screen and (max-width: 760px) {
@@ -273,8 +306,9 @@ header .mobile {
 
 #features-section {
   display: flex;
+
   width:90%;
-  justify-content: space-between;
+  justify-content:space-around;
   padding: 4rem 5%;
   background-color: #f3f3f3;
   padding-bottom:46px;
@@ -428,11 +462,13 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 30px;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -460,20 +496,30 @@ header .mobile {
     padding-top: 1rem;
     margin: auto;
   }
+
+  #quotes-section div .content {
+    display:flexbox;
+    flex:row;
+    text-align:left
+  }
 }
 
 /* Footer */
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
-  height: 32px;
+  padding-top:31px;
+  padding-bottom:31px;
+
 }
 
 footer .content {
   color: white;
   display: flex;
-  font-size: .75rem;
+  font-size: 12px;
+  padding-left: 32px;
+  padding-right:32px;
+
 }
 
 footer .copyright {
@@ -483,5 +529,11 @@ footer .copyright {
 @media only screen and (min-width: 760px) {
   footer .content {
     font-size: .625rem;
+  }
+}
+
+@media all and (min-width:980px) {
+  .mobile {
+    display:block;
   }
 }
